@@ -2,7 +2,7 @@ baseurl = "https://example.com/"  # Include trailing slash
 title = "Newsroom"
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
-theme = ["github.com/onweru/newsroom"] # edit this if you'ld rather use a fork of this repo
+theme = ["newsroom"] # edit this if you'ld rather use a fork of this repo
 # theme = "newsroom"
 author = "Weru"
 canonifyurls = true
@@ -39,3 +39,17 @@ paginate = 6
   logo = "" # if the value is an empty string, the site title will be shown instead
   faviconsDir = "images/icons/" # with a trailing slash
   blogDir = "post" # edit
+  enableGitalk = true
+
+[params.gitalk] 
+    clientID = "[Client ID]" # Your client ID
+    clientSecret = "[Client Secret]" # Your client secret
+    repo = "mogeko.github.io" # The repo to store comments
+    owner = "Mogeko" # Your GitHub ID
+    admin= "Mogeko" # Required. GitHub repository owner and collaborators. (Users who having write access to this repository)
+    id= "location.pathname" # The unique id of the page.
+    labels= "gitalk" # GitHub issue labels. If you used to use Gitment, you can change it
+    perPage= 15 # Pagination size, with maximum 100.
+    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually= false # If it is 'false', it is auto to make a GitHub issue when the administrators login.
+    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
