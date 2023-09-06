@@ -20,3 +20,5 @@
   other = "分享故事"
 [toggle_dark_mode]
     other = "Toggle Dark Mode"
+[more_pages]
+  other = "查看全部"

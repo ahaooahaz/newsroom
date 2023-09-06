@@ -1,8 +1,15 @@
 - item: About
   url: about/
+  icon: "fa fa-user"
 - item: Blog
   url: ""
+  icon: "fa fa-newspaper-o"
 - item: Category
   url: categories
+  icon: "fa fa-list"
 - item: Tag
   url: tags
+  icon: "fa fa-tags"
+- item: Rss
+  url: index.xml
+  icon: "fa fa-rss"

@@ -7,6 +7,8 @@ theme = ["newsroom"] # edit this if you'ld rather use a fork of this repo
 author = "Weru"
 canonifyurls = true
 paginate = 6
+languageCode = "zh"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 [markup]
   [markup.goldmark.renderer]
@@ -40,6 +42,7 @@ paginate = 6
   faviconsDir = "images/icons/" # with a trailing slash
   blogDir = "post" # edit
   enableGitalk = true
+  email = "Weru@example.com"
 
 [params.gitalk] 
     clientID = "[Client ID]" # Your client ID

@@ -20,3 +20,5 @@
   other = "Compartir"
 [toggle_dark_mode]
   other = "Activar modo oscuro"
+[more_pages]
+  other = "More Pages"
