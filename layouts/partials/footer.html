@@ -1,6 +1,7 @@
 <footer class="footer wrap pale">
-  <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Title }}</p>
-  <p class="attribution upcase">{{ safeHTML (T "designed_by" site.Data.designer) }}</p>
+    <p>{{ partial "githash.html" . }}</p>
+    <p>&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Params.Copyright }}&nbsp;</p>
+    <p class="attribution upcase">{{ safeHTML (T "designed_by" site.Data.designer) }}</p>
 </footer>
 {{ $scriptPath := "js/index.js" }}
 {{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
