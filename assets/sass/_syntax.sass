@@ -1,6 +1,6 @@
 pre
   display: grid
-  white-space: wrap
+  white-space: none
 // code
 //   white-space: none
 .highlight
@@ -13,22 +13,23 @@ pre
     top: 0
     bottom: 0
     width: 2px
-    left: 3rem
+    left: 2.75rem
     background: var(--bg)
     z-index: 10
   & &
     margin: 0
 
   pre
-    padding: 1rem
+    padding: 0.5rem
     background: var(--accent) !important
     color: var(--text) !important
-    border-radius: 4px
+    border-radius: 10px
     max-width: 100%
     overflow-x: auto
 
   table
     display: grid
+    border-radius: 10px
 
   .lntd
     width: 100%
