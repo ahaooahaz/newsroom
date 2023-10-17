@@ -1,10 +1,11 @@
 <footer class="footer wrap pale">
-    <div>
+    <div style="text-align: left;">
     <p>{{ partial "githash.html" . }}</p>
     </div>
     <div style="text-align: right;">
     <p class="attribution upcase">{{ safeHTML (T "designed_by" site.Data.designer) }}.</p>
     <p class="attribution upcase">&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Params.Copyright }}</p>
+    <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters" style="margin: 7px 0%;"></a>
     </div>
 </footer>
 {{ $scriptPath := "js/index.js" }}
