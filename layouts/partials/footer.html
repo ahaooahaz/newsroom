@@ -5,7 +5,13 @@
     <div style="text-align: right;">
     <p class="attribution upcase">{{ safeHTML (T "designed_by" site.Data.designer) }}.</p>
     <p class="attribution upcase">&copy;&nbsp;<span class="year"></span>&nbsp;{{ site.Params.Copyright }}</p>
-    <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters" style="margin: 7px 0%;"></a>
+    {{- with site.Params.footer_easycounter_href }}
+    <a href="{{ . }}">
+    {{ end -}}
+        <img src="https://www.easycounter.com/counter.php?ahaooahaz" border="0" alt="Hit Counters" style="margin: 7px 0%;"></a>
+    {{- with site.Params.footer_easycounter_href }}
+    </a>
+    {{ end -}}
     </div>
 </footer>
 {{ $scriptPath := "js/index.js" }}
